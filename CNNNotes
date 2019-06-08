@@ -1,0 +1,44 @@
+CNN notes:
+
+breaking up datasets into training data, validation data, and testing data.
+
+hyper parameters:  where do we start- were do we end
+
+How many families and which ones will we use?
+maybe 2 at first with the goal of
+10 familys with largest  datasets
+Multi-modal family issues (maple)??
+
+loss function, squared or non hinge?, Cross Entropy?: loop over incorrect class weight
+values and subtract each from target class weight value to get loss.
+How much greater do we want target class than wrong class?
+weight How much loss do we look for?
+Loss is average over all classes. minumum loss is 0
+
+//Initially (first start of training) loss should be classes -1.  If it's not,
+check for bugs.
+
+Regularization: L2, euclid norm penalize weight vector.
+
+Data structures, matrix dimensions, one-hot-encoding (but not (c++)) target cat.s
+to binary matrix/vector.
+
+Alternate activation function: Softmax(multinomial logistics regression)
+source:
+
+Accuracy: SOTA is 95%
+
+slope is the dot product of direction with gradients
+The direction of steepest descent is negative gradient
+
+May need to scale down input and use numerical gradient to debug.
+
+STD(Stochastic Gradient Descent) Mini-batch gradient descent?
+
+HoG (Histogram of Oriented Gradients) opencv implementation?
+
+Jacobian matrix?
+
+Handling the sparse leaf data?  CSR or CCOO?
+
+vector sizing / convolution stride / non square / zero padding to maintain input size
